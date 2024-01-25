@@ -4,27 +4,37 @@ option = [...option];
 let choose = document.getElementsByClassName("choose");
 choose = [...choose];
 
-const calc = document.getElementById("calc");
+let calc = document.getElementById("calc");
+
+let clean=document.getElementById("clean");
 
 let result = document.getElementsByClassName("resultX0");
 let input = document.getElementById("input");
 let resultado = 0;
+let numOfDisplay;
 
-console.log(option);
-console.log(choose);
+clean.addEventListener("click",()=>{
+    input.value="";
+})
 
 option.forEach((num) => {
   num.addEventListener("click", () => {
-    input.value += num.innerText;
+     numOfDisplay = input.value += num.innerText;
   });
 });
 
-let numOfDisplay = input.value;
+
 
 calc.addEventListener("click",()=>{
     console.log(numOfDisplay);
-})
-
+    for(let i=0;i<choose.length;i++){
+        choose[i].innerText= numOfDisplay;
+    }
+    for (let i = 0; i < 11; i++) {
+        resultado = numOfDisplay * i;
+        result[i].innerText = resultado;
+      }
+});
 
 
 /*
