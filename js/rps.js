@@ -5,17 +5,17 @@ function playGame(playerChoice) {
     // Determine the winner
     let result;
     if (playerChoice === computerChoice) {
-        result = "It's a tie!";
+        result = "Empate";
     } else if (
         (playerChoice === 'rock' && computerChoice === 'scissors') ||
         (playerChoice === 'paper' && computerChoice === 'rock') ||
         (playerChoice === 'scissors' && computerChoice === 'paper')
     ) {
-        result = "You win!";
+        result = "Ganhou";
     } else {
-        result = "You lose!";
+        result = "Perdeu";
     }
 
     // Display the result
-    document.getElementById('result').innerHTML = `You chose ${playerChoice}. Computer chose ${computerChoice}. ${result}`;
+    document.getElementById('result').innerHTML = `Escolheu: ${playerChoice}. Computador escolheu: ${computerChoice}. ${result}`;
 }
