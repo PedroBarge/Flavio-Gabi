@@ -1,5 +1,5 @@
-let option = document.getElementsByClassName("option");
-option = [...option];
+let number = document.getElementsByClassName("number");
+number = [...number];
 
 let choose = document.getElementsByClassName("choose");
 choose = [...choose];
@@ -23,7 +23,7 @@ clean.addEventListener("click", () => {
   }
 });
 
-option.forEach((num) => {
+number.forEach((num) => {
   num.addEventListener("click", () => {
     numOfDisplay = input.value += num.innerText;
   });
