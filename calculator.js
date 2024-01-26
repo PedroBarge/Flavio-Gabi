@@ -26,7 +26,6 @@ function equal(){
   display.value = eval(display.value);
 }
 
-
 function clean() {
   display.value = "";
 }
