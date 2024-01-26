@@ -4,7 +4,6 @@ number = [...number];
 let display = document.getElementById("display");
 let numberFromDisplay;
 
-
 number.forEach((numForButton) => {
   numForButton.addEventListener("click", () => {
     numberFromDisplay = display.value += numForButton.innerText;
@@ -17,14 +16,17 @@ symbol = [...symbol];
 let symbolChoose;
 
 symbol.forEach((symbol) => {
-    symbol.addEventListener("click", () => {
+  symbol.addEventListener("click", () => {
     symbolChoose = display.value += symbol.innerText;
     console.log(symbolChoose);
   });
 });
 
-let equal = document.getElementById("total");
+function equal(){
+  display.value = eval(display.value);
+}
 
-equal.addEventListener("click",()=>{
-    
-});
+
+function clean() {
+  display.value = "";
+}
