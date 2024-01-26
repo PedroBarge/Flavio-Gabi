@@ -1,3 +1,10 @@
+body{
+    background-image: url('https://i.ytimg.com/vi/ZqdzNxAQiWY/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDPGcykX9xqsnk9lk8lgKH1lQcprg');
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 body {
     display: flex;
     flex-direction: column;
@@ -5,6 +12,12 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
+    color:blue;
+
+}
+
+h1{
+    color:blue;
 }
 
 button {

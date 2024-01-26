@@ -1,3 +1,10 @@
+body{
+    background-image: url('https://media.istockphoto.com/id/502738273/pt/foto/empresário-mãos.jpg?s=612x612&w=0&k=20&c=pGGqHm0KSIVmggCmiab1dO-9yDwzTUBtb603bvwVZmU=');
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 body {
     display: flex;
     flex-direction: column;
