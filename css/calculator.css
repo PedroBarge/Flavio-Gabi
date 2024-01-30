@@ -1,11 +1,4 @@
 
-body{
-    background-image: url('https://investidorsardinha.r7.com/wp-content/uploads/2021/02/sistema-de-contas-nacionais-o-que-e-estrutura-e-pra-que-serve-1-1024x569.jpg');
-    height: 100%;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
 body {
     display: flex;
     flex-direction: column;

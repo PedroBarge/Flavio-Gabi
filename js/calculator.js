@@ -7,7 +7,6 @@ let numberFromDisplay;
 number.forEach((numForButton) => {
   numForButton.addEventListener("click", () => {
     numberFromDisplay = display.value += numForButton.innerText;
-    console.log(numberFromDisplay);
   });
 });
 
@@ -18,14 +17,25 @@ let symbolChoose;
 symbol.forEach((symbol) => {
   symbol.addEventListener("click", () => {
     symbolChoose = display.value += symbol.innerText;
-    console.log(symbolChoose);
   });
 });
 
-function equal(){
+function equal() {
   display.value = eval(display.value);
 }
 
 function clean() {
   display.value = "";
 }
+
+document.addEventListener("keydown", function(event) {
+  if (event.key === "Enter") {
+    equal();
+  }
+});
+
+document.addEventListener("keydown", function(event) {
+  if (event.key === "Backspace") {
+    clean();
+  }
+});
