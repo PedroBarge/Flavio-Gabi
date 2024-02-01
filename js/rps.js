@@ -1,5 +1,5 @@
 function playGame(playerChoice) {
-    const choices = ['pedra', 'papel', 'tessoura'];
+    const choices = ['pedra', 'papel', 'tesoura'];
     const computerChoice = choices[Math.floor(Math.random() * 3)];
 
     // Determine the winner
@@ -7,9 +7,9 @@ function playGame(playerChoice) {
     if (playerChoice === computerChoice) {
         result = "Empate";
     } else if (
-        (playerChoice === 'pedra' && computerChoice === 'tessoura') ||
+        (playerChoice === 'pedra' && computerChoice === 'tesoura') ||
         (playerChoice === 'papel' && computerChoice === 'pedra') ||
-        (playerChoice === 'tessoura' && computerChoice === 'papel')
+        (playerChoice === 'tesoura' && computerChoice === 'papel')
     ) {
         result = "Ganhou";
     } else {
